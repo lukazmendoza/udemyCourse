@@ -1,4 +1,15 @@
 <p>dashboard-component works!</p>
-<h1>HOLA MUNDO</h1>
+<h1>Hello World</h1>
 
-<button>Loading</button>
+<div>
+    <button (click)="onSwitchState()">Switch State</button>
+</div>
+<h2>{{ loadState }}</h2>
+
+<p [textContent]="loadState"></p>
+
+<div>
+    <input type="text" (input)="loadState = $event.target.value">
+
+    <input type="text" [(ngModel)]="loadState">
+</div>
