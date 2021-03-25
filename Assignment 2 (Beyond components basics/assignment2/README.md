@@ -1,27 +1,11 @@
-# Assignment2
+Your Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1- Create a new component => CartComponent
+2- Add a propert to that component => 'items' wich initially is and empty array
+3- Make 'items' bindable and set the value of items from outside (from the AppComponent)
+4- Set an initial array with ['Apples', 'Bananas', 'Cherries']
+5- Add a 'Add Item' button and an input field to your CartComponent
+6- Bing the input value to a property in the CartComponent (two-way binding)  and add a click listener for the button
+7- Emit a new event to wich you may listen from the AppComponent on every button click. Pass the entered value as a value with the event
+8- Listen to the emitted event in your AppComponent and add the passed data to your 'items' array
+9- Output the array in the method where you add items by calling console.log()
