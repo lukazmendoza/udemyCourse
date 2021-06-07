@@ -24,15 +24,14 @@ export class StarWarsService {
     fetchCharacters() {
         this.http.get('https://swapi.dev/api/people/')
             .map((response: Response) => {
-
                 const data = response.json();
-                const extractredChars = data.results;
+                const extractredChars = data.results;   //<-------------------------Here
                 const chars = extractredChars.map((char) => {
                     return { name: char.name, side: '' };
                 });
-
                 return response.json();
             })
+
             .subscribe(
                 (data) => {
                     console.log(data);
